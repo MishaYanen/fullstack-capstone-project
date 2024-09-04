@@ -24,6 +24,7 @@
     "pino-pretty": "^10.3.1"
   },
   "devDependencies": {
+    "eslint": "^7.27.0",
     "@testing-library/jest-dom": "^6.3.0",
     "@testing-library/react": "^14.1.2",
     "chai": "^4.3.10",

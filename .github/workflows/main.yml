@@ -16,13 +16,13 @@ jobs:
         with:
           node-version: 14
       - name: Install JSHint
-        run: npm install jshint --global
+        run: npm install eslint --global
       - name: Run Linter
         run: |
           # This command finds all JavaScript files recursively and runs JSHint on them
-          find ./giftlink-backend -name app.js -exec jshint {} +
-          find ./giftlink-backend -name auth.js -exec jshint {} +
-          find ./giftlink-backend -name searchRoutes.js -exec jshint {} +
+          find ./giftlink-backend -name app.js -exec eslint {} +
+          find ./giftlink-backend -name auth.js -exec eslint {} +
+          find ./giftlink-backend -name searchRoutes.js -exec eslint {} +
           echo "Linted all the js files successfully"
   client_build:
       name: Build client
